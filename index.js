@@ -6,14 +6,23 @@ const generateMarkdown = require("./generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 var questions = [{
-  name: "title",
-  message: "What is your title?",
-  type: "input"
+   name: "title",
+   message: "Please enter the name of your project.",
+   type: "input"
 },
 {  name: "description",
-   message: "Please provide a description?",
+   message: "Please provide a description of your project.",
    type: "input"
-}];
+},
+{  name: "installation",
+   message: "Please enter the instructions for installation process.",
+   type: "input"
+},
+{  name: "usage",
+   message: "Please provide usage information such as devices, memory installed, etc.",
+   type: "input"
+},
+];
 
 
 
@@ -34,6 +43,8 @@ function init (){
     console.log(data)
     console.log(data.title)
     console.log(data.description)
+    console.log(data.installation)
+    console.log(data.usage)
     // use the writeToFile function here
     writeToFile("Readme.md", generateMarkdown ({...data})
     )
