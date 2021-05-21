@@ -2,6 +2,7 @@
 var inquirer = require('inquirer');
 const fs = require("fs");
 const { title } = require('process');
+const generateMarkdown = require("./generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 var questions = [{
@@ -24,17 +25,17 @@ function writeToFile(fileName, data) {
 }
 
 
-
-inquirer
+function init (){
+  inquirer
  /* Pass your questions in here */
   .prompt(questions)
-  .then(answers => {
+  .then(data => {
     // Use user feedback for... whatever!!
-    console.log(answers)
-    console.log(answers.title)
-    console.log(answers.description)
+    console.log(data)
+    console.log(data.title)
+    console.log(data.description)
     // use the writeToFile function here
-    writeToFile("Readme-Test.md", answers.title + "\n" + answers.description
+    writeToFile("Readme.md", generateMarkdown ({...data})
     )
   })
   .catch(error => {
@@ -45,3 +46,6 @@ inquirer
       // Something else went wrong
     }
   });
+}
+
+init();
