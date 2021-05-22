@@ -1,7 +1,11 @@
-# jksdljflakfdskfjl
+# The ReadMe Challenge Generator
   ## Description 
-  sdfhsdjkfhasdfjlaweuirhaefhdljkfheilureilkfjkld
+  A Page to enter all the information regarding your project
   ## Installation 
-  ksdkfjsdifuaeif
+  Click on edit, type your information, be sure to include what devices you use
   ## Usage 
-  sdkruaeirhdskfvdfgghflkaer;oiopeaapeor
+  Memory Storage, screen resolution, operating system, 
+  ## Contributing
+  No One, Just Me
+  ## Tests
+  Here are the tests.

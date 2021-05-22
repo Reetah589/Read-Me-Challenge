@@ -22,6 +22,14 @@ var questions = [{
    message: "Please provide usage information such as devices, memory installed, etc.",
    type: "input"
 },
+{  name: "contributing",
+   message: "Enter those who contributed to the project.",
+   type: "input"
+},
+{  name: "tests",
+   message: "Write about your tests.",
+   type: "input"
+},
 ];
 
 
@@ -45,6 +53,8 @@ function init (){
     console.log(data.description)
     console.log(data.installation)
     console.log(data.usage)
+    console.log(data.contributing)
+    console.log(data.tests)
     // use the writeToFile function here
     writeToFile("Readme.md", generateMarkdown ({...data})
     )

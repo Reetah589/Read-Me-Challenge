@@ -18,7 +18,11 @@ function generateMarkdown(data) {
   ## Installation 
   ${data.installation}
   ## Usage 
-  git${data.usage}
+  ${data.usage}
+  ## Contributing
+  ${data.contributing}
+  ## Tests
+  ${data.tests}
 `;
 }
 
