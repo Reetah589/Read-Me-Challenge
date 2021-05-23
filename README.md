@@ -1,11 +1,11 @@
-# The ReadMe Challenge Generator
+# Example Project Title
   ## Description 
-  A Page to enter all the information regarding your project
+  My Awesome Project
   ## Installation 
-  Click on edit, type your information, be sure to include what devices you use
+  NPM Install example project
   ## Usage 
-  Memory Storage, screen resolution, operating system, 
+  Mac OS Windows Linux
   ## Contributing
-  No One, Just Me
+  No One Contributed
   ## Tests
-  Here are the tests.
+  NO TESTS!

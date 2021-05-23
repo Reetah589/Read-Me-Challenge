@@ -48,16 +48,16 @@ function init (){
   .prompt(questions)
   .then(data => {
     // Use user feedback for... whatever!!
-    console.log(data)
-    console.log(data.title)
-    console.log(data.description)
-    console.log(data.installation)
-    console.log(data.usage)
-    console.log(data.contributing)
-    console.log(data.tests)
+    //console.log(data)
+    //console.log(data.title)
+    //console.log(data.description)
+    //console.log(data.installation)
+    //console.log(data.usage)
+    //console.log(data.contributing)
+    //console.log(data.tests)
     // use the writeToFile function here
-    writeToFile("Readme.md", generateMarkdown ({...data})
-    )
+    writeToFile("Readme.md", generateMarkdown ({...data}))
+    console.log("Your ReadMe Information Has Been Generated")
   })
   .catch(error => {
     console.log(error)
